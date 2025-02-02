@@ -1,20 +1,13 @@
-import { useNavigate } from 'react-router-dom';
+import "../../App.css";
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const goToAbout = () => {
-    navigate('/about');
-  }
-
   return (
     <>
-      <div>
-        <h1>こんにちは~!</h1>
-        <button onClick={goToAbout}>ボタン</button>
+      <div className="container">
+        <spline-viewer url="https://prod.spline.design/T1M1cyMUUdkTUYrm/scene.splinecode"></spline-viewer>
       </div>
     </>
-  )
+  );
 };
 
 export default Home;
